@@ -1,0 +1,108 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+.App {
+  text-align: center;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+}
+
+
+.App-footer {
+  background-color: #282c34;
+  color: white;
+  padding: 10px;
+}
+
+
+.App-navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+
+.App-calculator {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.input-field {
+  margin-bottom: 10px;
+}
+
+.input-field label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+.button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+
+.result {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+}
+
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .App-calculator {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .input-field {
+    margin-bottom: 5px;
+  }
+
+  .input-field input {
+    padding: 8px;
+  }
+
+  .button {
+    padding: 8px 16px;
+  }
+}

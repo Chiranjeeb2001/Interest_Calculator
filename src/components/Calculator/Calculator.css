@@ -1,0 +1,148 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .labelOption {
+    text-transform: uppercase;
+    border: 1px solid #333;
+    font-weight: 600;
+    color: #333;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .selectOption {
+    border: none;
+    background-color: white;
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    outline: none;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  
+  .stageInterest,
+  .stagePrincipal,
+  .stageRate,
+  .stageTime {
+    margin-top: 20px;
+    width: 100%;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+  
+  .stageInterest label,
+  .stagePrincipal label,
+  .stageRate label,
+  .stageTime label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .stageInterest input,
+  .stagePrincipal input,
+  .stageRate input,
+  .stageTime input {
+    width: calc(100% - 20px); 
+    padding: 8px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px; 
+    transition: border-color 0.3s ease;
+  }
+  
+  .stageInterest input:focus,
+  .stagePrincipal input:focus,
+  .stageRate input:focus,
+  .stageTime input:focus {
+    border-color: #333;
+  }
+  
+  .stageInterest button,
+  .stagePrincipal button,
+  .stageRate button,
+  .stageTime button {
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .stageInterest button:hover,
+  .stagePrincipal button:hover,
+  .stageRate button:hover,
+  .stageTime button:hover {
+    background-color: #555;
+  }
+  
+  .show1ForInterest,
+  .show1ForPrincipal,
+  .show1ForRate,
+  .show1ForTime {
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .show2-1ForInterest,
+  .show2-1ForPrincipal,
+  .show2-1ForRate,
+  .show2-1ForTime {
+    font-size: 18px;
+  }
+  
+  .show2-2ForInterest,
+  .show2-2ForPrincipal,
+  .show2-2ForRate,
+  .show2-2ForTime {
+    font-size: 18px;
+  }
+  .resetButton {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .resetButton:hover {
+    background-color: #d32f2f;
+  }
+  
+  
+  .active {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+  
+  
+  @media (min-width: 768px) {
+    .container {
+      width: 80%;
+    }
+    .resetButton {
+        margin-left: 0;
+        margin-top: 10px;
+      }
+    .stageInterest.active,
+    .stagePrincipal.active,
+    .stageRate.active,
+    .stageTime.active {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
